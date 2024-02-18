@@ -31,9 +31,9 @@ make fix
 
 ## Memray: memory profiler
 ```bash
-# Create .env file
+# Profiling
 make memray
 
-# Makefile command
-make report
+# Create report format html
+make report FILE=<memray_name_file.bin>
 ```
