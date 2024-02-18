@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-git clone https://dnomads.gitlab.yandexcloud.net/backend/evolution.git
+git clone https://github.com/boogiiieee/pyqt5.git
 python version 3.12
 pipx install poetry
 poetry install
