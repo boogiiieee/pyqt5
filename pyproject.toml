@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "gui"
+version = "0.1.0"
+description = ""
+authors = ["shalyapinalexander@gmail.com <shalyapinalexander@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+loguru = "^0.7.2"
+psutil = "^5.9.8"
+pyqt5 = "^5.15.10"
+environs = "^10.3.0"
+pyqtgraph = "^0.13.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+memray = "^1.11.0"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+# See definitions https://docs.astral.sh/ruff/rules/
+select = [
+    "ASYNC", # flake8-async
+    "B",     # flake8-bugbear
+    "C4",    # flake8-comprehensions
+    "E",     # pycodestyle errors
+    "F",     # Pyflakes
+    "I",     # isort
+    "N",     # pep8-naming
+    "SIM",   # flake8-simplify
+    "T20",   # flake8-print
+    "TD",    # flake8-todos
+]
+
+[tool.ruff.lint.flake8-bugbear]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
